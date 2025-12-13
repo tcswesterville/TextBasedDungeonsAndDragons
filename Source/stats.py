@@ -1,4 +1,5 @@
-class Stats:
+import random
+class Stats():
     def __init__ (strength, dexterity, charisma, constitution, intelligence, wisdom):
         self.stats = {
             "strength": strength,
@@ -30,3 +31,14 @@ class Stats:
     }
     def SkillModifier(stat: str):
         return (self.stats[stat]-10)//2
+
+    def generateStat():
+        numbers = []
+        for i in range(4):
+            numbers.append(random.randint(1, 6)) 
+        return sum(numbers) - min(numbers)
+    def generateStats():
+        generatedStats = []
+        for i in range(6):
+            generatedStats.append(generateStat)
+        return generatedStats
