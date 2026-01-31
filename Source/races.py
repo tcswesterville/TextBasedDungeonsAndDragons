@@ -11,19 +11,22 @@ class Race:
         while not utilities.validate_input(self.races.keys(), choice):
             choice = input(message)
         if isinstance(RacialStats[self.races[choice]], list):
-            print("callable")
+            RacialStats[self.races[choice]][0](RacialStats[self.races[choice]][1])
         else:
             print("not callable")
     def StatBoosts(options):
-        message = "Select choice from: "
-        for index, option in enumerate (options):
-            message += f" {index + 1}: "
-            for i in range(len(options)): 
-                message += f"add {options[i]} to one stat" if i == 0 else f" and add {options[i]} to a different stat"
+        message = "Select choice from:\n"
+        for i, option in enumerate (options):
+            message += f" {i + 1}: "
+            for j in range(len(options[i])): 
+                message += f"add {options[i][j]} to one stat" if j == 0 else f", add {options[i][j]} to a different stat"
             message += "\n"
         option = -1
-        while not utilities.validate_input(list(range(1, 1 + len(options))), option):
-            option = input()
+        AcceptableOptions = list(map(str, list(range(1, 1 + len(options)))))
+        while not utilities.validate_input(AcceptableOptions, option):
+            option = input(message)
+        StoredStats = stats.Stats()
+        message = f"Add {} to one of the following stats:\n"
 
 RacialStats={
     "Human": {"strength":1, "dexterity":1, "charisma":1, "constitution":1, "intelligence":1, "wisdom":1},

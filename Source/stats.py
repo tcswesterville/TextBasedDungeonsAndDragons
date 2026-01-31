@@ -1,12 +1,12 @@
 import random
 class Stats():
-    def __init__ (strength, dexterity, charisma, constitution, intelligence, wisdom):
+    def __init__ (self, strength=0, dexterity=0, charisma=0, constitution=0, intelligence=0, wisdom=0):
         self.stats = {
             "strength": strength,
             "dexterity": dexterity,
             "charisma": charisma,
             "constitution": constitution,
-            "intelligence": inteligence,
+            "intelligence": intelligence,
             "wisdom": wisdom
         }
     SkillMappings = {
@@ -29,16 +29,18 @@ class Stats():
         "Performance": "charisma",
         "Persuasion": "charisma"
     }
-    def SkillModifier(stat: str):
+    def GetStats(self):
+        return self.stats
+    def SkillModifier(self, stat: str):
         return (self.stats[stat]-10)//2
 
-    def generateStat():
+    def generateStat(self):
         numbers = []
         for i in range(4):
             numbers.append(random.randint(1, 6)) 
         return sum(numbers) - min(numbers)
-    def generateStats():
+    def generateStats(self):
         generatedStats = []
         for i in range(6):
-            generatedStats.append(generateStat)
+            generatedStats.append(self.generateStat())
         return generatedStats
