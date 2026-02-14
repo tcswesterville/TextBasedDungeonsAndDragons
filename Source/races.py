@@ -26,7 +26,18 @@ class Race:
         while not utilities.validate_input(AcceptableOptions, option):
             option = input(message)
         StoredStats = stats.Stats()
-        message = f"Add {} to one of the following stats:\n"
+        statOptions = ["strength", "dexterity", "charisma", "constitution", "inteligence", "wisdom"]
+        for number in options[int(option)-1]:
+            AcceptableOptions = list(map(str, list(range(1, 1 + len(statOptions)))))
+            message = f"Add {number} to one of the following stats:\n"
+            for i, AvailableStat in enumerate(statOptions):
+                message += f"{i+1}: {AvailableStat}\n"
+            chosenStat = -1
+            while not utilities.validate_input(AcceptableOptions, chosenStat):
+                chosenStat = input(message)
+            StoredStats.setStat(statOptions[int (chosenStat)-1], number)
+            del statOptions[int(chosenStat)-1]
+        StoredStats.printStats()
 
 RacialStats={
     "Human": {"strength":1, "dexterity":1, "charisma":1, "constitution":1, "intelligence":1, "wisdom":1},

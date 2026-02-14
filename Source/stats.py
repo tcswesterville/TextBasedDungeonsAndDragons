@@ -29,8 +29,14 @@ class Stats():
         "Performance": "charisma",
         "Persuasion": "charisma"
     }
+    def setStat(self, stat, value):
+        self.stats[stat] = value
     def GetStats(self):
         return self.stats
+    def printStats(self):
+        print("stats:\n")
+        for key, value in self.stats:
+            print(f"{key}: {value}\n")
     def SkillModifier(self, stat: str):
         return (self.stats[stat]-10)//2
 
