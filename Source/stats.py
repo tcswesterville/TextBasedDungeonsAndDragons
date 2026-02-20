@@ -35,7 +35,7 @@ class Stats():
         return self.stats
     def printStats(self):
         print("stats:\n")
-        for key, value in self.stats:
+        for key, value in self.stats.items():
             print(f"{key}: {value}\n")
     def SkillModifier(self, stat: str):
         return (self.stats[stat]-10)//2

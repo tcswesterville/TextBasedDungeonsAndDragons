@@ -2,7 +2,7 @@ import utilities
 import stats
 class Race:
     def __init__(self):
-        self.races = {"1": "Human", "2": "Goblin", "3": "Golem"}
+        self.races = {"1": "Human", "2": "Goblin", "3": "Goliath", "4": "DragonBorn", "5": "Dwarf", "6": "Gnome", "7": "Aasimar", "8": "Tiefling", "9": "Halfling", "10": "Elf"}
         message = "Select race from:"
         for key, value in self.races.items():
             message += f" {key}: {value}"
@@ -42,5 +42,12 @@ class Race:
 RacialStats={
     "Human": {"strength":1, "dexterity":1, "charisma":1, "constitution":1, "intelligence":1, "wisdom":1},
     "Goblin": [Race.StatBoosts, [[2,1],[1,1,1]]],
-    "Golem": [Race.StatBoosts, [[2,1],[1,1,1]]],
+    "Goliath": [Race.StatBoosts, [[2,1],[1,1,1]]],
+    "DragonBorn": {"strength":2, "dexterity":0, "charisma":1, "constitution":0, "intelligence":0, "wisdom":0},
+    "Dwarf": {"strength":0, "dexterity":0, "charisma":0, "constitution":2, "intelligence":0, "wisdom":0},
+    "Gnome": {"strength":0, "dexterity":0, "charisma":0, "constitution":0, "intelligence":2, "wisdom":0},
+    "Aasimar": [Race.StatBoosts, [[2, 2],[1,1,1]]],
+    "Tiefling": {"strength":0, "dexterity":0, "charisma":2, "constitution":0, "intelligence":1, "wisdom":0},
+    "Halfing": {"strength":0, "dexterity":2, "charisma":0, "constitution":0, "intelligence":0, "wisdom":0},
+    "Elf": {"strength":0, "dexterity":2, "charisma":0, "constitution":0, "intelligence":0, "wisdom":0},
 }
