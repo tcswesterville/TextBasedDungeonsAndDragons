@@ -1,0 +1,16 @@
+startingShop_weapons = {
+    "Club": 1,
+    "Dagger": 2,
+    "Greatclub": 2,
+    "Handaxe": 5,
+    "Javelin": 5,
+    "Light Hammer": 2,
+    "Mace": 5,
+    "Quarterstaff": 2,
+    "Sickle": 1,
+    "Spear": 1,
+    "Dart": 5,
+    "Light Crossbow": 25,
+    "Shortbow": 25,
+    "Sling": 1,
+}

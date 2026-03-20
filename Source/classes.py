@@ -3,7 +3,7 @@ import stats
 class Classes:
     def __init__(self):
         self.classes = {"1": "Barbarian", "2": "Bard", "3": "Cleric", "4": "Druid", "5": "Fighter", "6": "Monk", "7": "Paladin", "8": "Ranger", "9": "Rogue", "10": "Sorcerer", "11": "Warlock", "12": "Wizard"}
-        self.chooseClass()
+
     def chooseClass(self):
         message = "Select class from:"
         for key, value in self.classes.items():
@@ -13,4 +13,5 @@ class Classes:
         while not utilities.validate_input(list(self.classes.keys()), choice):
             choice = input(message)
         print(f"Class chosen: {self.classes[choice]}")
+        return self.classes[choice]
    
