@@ -1,0 +1,239 @@
+{
+    "items": {
+        "weapons": {
+            "Club": 0.1,
+            "Dagger": 2,
+            "Greatclub": 0.2,
+            "Handaxe": 5,
+            "Javelin": 0.5,
+            "Light Hammer": 2,
+            "Mace": 5,
+            "Quarterstaff": 0.2,
+            "Sickle": 1,
+            "Spear": 1,
+            "Dart": 0.05,
+            "Light Crossbow": 25,
+            "Shortbow": 25,
+            "Sling": 0.1,
+            "Battleaxe": 10,
+            "Flail": 10,
+            "Glaive": 20,
+            "Greataxe": 30,
+            "Greatsword": 50,
+            "Halberd": 20,
+            "Lance": 10,
+            "Longsword": 15,
+            "Maul": 10,
+            "Morningstar": 15,
+            "Pike": 5,
+            "Rapier": 25,
+            "Scimitar": 25,
+            "Shortsword": 10,
+            "Trident": 5,
+            "War Pick": 5,
+            "Warhammer": 15,
+            "Whip": 2,
+            "Blowgun": 10,
+            "Hand Crossbow": 75,
+            "Heavy Crossbow": 50,
+            "Longbow": 50,
+            "Net": 1
+        },
+        "armor": {
+            "padeded" : 5,
+            "leather": 10,
+            "studded leather": 45,
+            "hide": 10,
+            "chain shirt": 50,
+            "scale mail": 50,
+            "breastplate": 400,
+            "half plate": 750,
+            "ring mail": 30,
+            "chain mail": 75,
+            "splint": 200,
+            "plate": 1500,
+            "shield": 10
+        },
+        "Adventuring Gear": {
+            "Utility and Storage": {
+                "Abacus": 2,
+                "Backpack": 2,
+                "Barrel": 2,
+                "Basket": 0.4,
+                "Glass bottle": 2,
+                "Bucket": 0.05,
+                "Chest": 5,
+                "Flask or Tankard": 0.02,
+                "Jug or Pitcher": 0.02,
+                "Iron Pot": 2,
+                "Pouch": 0.5,
+                "Sack": 0.01,
+                "Vial": 1
+            },
+            "Lighting and Fire": {
+                "Candle": 0.01,
+                "Lamp": 0.5,
+                "Bullseye Lantern": 10,
+                "Hooded Lantern": 5,
+                "Flask of Oil": 0.1,
+                "Tinderbox": 0.5,
+                "Torch": 0.01
+            },
+            "Survival and Travel Gear": {
+                "Bedroll": 1,
+                "Blanket": 0.5,
+                "Fishing Tackle": 1,
+                "Grappling Hook": 2,
+                "Hunting Trap": 5,
+                "Mess Kit": 0.2,
+                "Rations (1 day)": 0.5,
+                "Rope (50 feet, Hempen)": 1,
+                "Rope (50 feet, Silk)": 10,
+                "Tent (2 person)": 2,
+                "Waterskin": 0.2,
+                "Whetstone": 0.01
+            },
+            "Special and Combat items": {
+                "Vial of Acid": 25,
+                "Alcchemist's Fire (Flask)": 50,
+                "Vial of antitoxin": 50,
+                "Ball Bearings (Bag of 1,000)": 1,
+                "Caltrops (Bag of 20)": 1,
+                "Flask of Holy Water": 25,
+                "Vial of basic poison": 100,
+                "Potion of Healing": 50
+            },
+            "Tools and Exploration": {
+                "Block and Tackle": 1,
+                "Crowbar": 2,
+                "Hammer": 1,
+                "Sledge hammer": 2,
+                "Ladder (10-foot)": 0.1,
+                "Lock": 10,
+                "Magnifying Glass": 100,
+                "Manacles": 2,
+                "Steel Mirror": 5,
+                "Miners pick": 2,
+                "piton": 0.05,
+                "Pole (10-foot)": 0.5,
+                "Portable Ram": 4,
+                "Shovel": 2,
+                "Signal whistle": 0.05,
+                "Iron Spikes (10)": 1,
+                "Spyglass": 1000
+            },
+            "Scholary and Professional Items": {
+                "Book": 25,
+                "Chalk": 0.01,
+                "Ink (1 ounce bottle)": 10,
+                "Ink Pen": 0.02,
+                "Paper (one sheet)": 0.2,
+                "Parchment (one sheet)": 0.1,
+                "Merchants Scale": 5,
+                "Sealing Wax": 0.5,
+                "Signet Ring": 5,
+                "Spellbook": 50
+            },
+            "Clothing": {
+                "Costume": 5,
+                "Fine Clothes": 15,
+                "Traveler's Clothes": 2,
+                "Robes": 1
+            }
+        }, "Mounts and Vehicles": {
+                "Mounts": {
+                    "Camel": 50,
+                    "Donkey or Mule": 8,
+                    "Elephant": 200,
+                    "Horse (Draft)": 50,
+                    "Horse (Riding)": 75,
+                    "Mastiff": 25,
+                    "Pony": 30,
+                    "Warhorse": 400
+                },
+                "Land Vehicles": {
+                "Carriage": 100,
+                    "Cart": 15,
+                    "Chariot": 250,
+                    "Sled": 20,
+                    "Wagon": 35
+            },
+            "Water Vehicles": {
+                "Rowboat": 50,
+                "Keelboat": 3000,
+                "Sailing Ship": 10000,
+                "Longship": 10000,
+                "Warship": 25000,
+                "Galley": 30000
+            },
+            "Air Vehicles": {
+                "Airship": 30000,
+                "Skyship": 100000
+            },
+            "Extra": {
+                "Bit and Bridle": 2,
+                "Harness": 2,
+                "Saddlebags": 4,
+                "Feed (one day)": 0.05,
+                "Pack Saddle": 5,
+                "Riding Saddle": 10,
+                "Exotic Saddle": 60,
+                "Millitary Saddle": 20,
+                "Leather Barding": 40,
+                "Chain Shirt Barding": 200
+            }
+        },
+        "Services and Expenses": {
+            "Lodging": {
+                "Squalid Room": 0.5,
+                "Poor Room": 1,
+                "Modest Room": 2,
+                "Comfortable Room": 4,
+                "Wealthy Room": 10,
+                "Aristocratic Room": 25
+            },
+            "Transportation": {
+                "Waterborne Passage (per mile)": 0.5,
+                "Landborne Passage (per mile)": 0.2
+            },
+            "Professional Services": {
+                "Healer (per day)": 50,
+                "Muleteer (per day)": 8,
+                "Scribe (per page)": 0.02,
+                "Spy (per day)": 10,
+                "Trainer (per day)": 10
+            }
+        },
+        "Spellcasting Focuses": {
+            "Arcane Foci(Sorcerer, Warlock, Wizard)": {
+                "Crystal": 10,
+                "Orb": 20,
+                "Rod": 10,
+                "Staff": 5,
+                "Wand": 10
+            },
+            "Druidic Foci(Druid)": {
+                "Sprig of Mistletoe": 1,
+                "Totem": 1,
+                "Wooden Staff": 5,
+                "Yew Wand": 10
+        },
+        "Holy Symbols(Cleric, Paladin)": {
+            "Amulet": 5,
+            "Emblem": 5,
+            "Reliquary": 5
+        },
+        "Bardic Musical Instruments(Bard)": {
+            "Bagpipes": 30,
+            "Drum": 6,
+            "Dulcimer": 25,
+            "Flute": 2,
+            "Lute": 35,
+            "Lyre": 30,
+            "Horn": 3,
+            "Pan Flute": 12,
+            "Viol": 30
+        }
+        }
+    }
+}

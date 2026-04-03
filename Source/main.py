@@ -3,17 +3,20 @@ import races
 import classes
 import stats2
 import StartingGold
-import startingShop
 import shop
+from data import Data
 def greeting():
     message = "New Character(choose 1) or load save file(choose 2)"
     choice = ""
+    data = Data()
+    data.loadData("Source/data.json")
+    print(data.data)
     playerRace = races.Race()
     playerClass = classes.Classes()
     className = playerClass.chooseClass()
     playerStats = stats2.choosingStats()
     playerGold = StartingGold.GoldRoll(playerClass, className)
-    playerShop = shop.Shop(startingShop.startingShop_weapons)
+    playerShop = shop.Shop(data.data["items"])
     playerShop.openShop(playerGold)
     
 def main():
