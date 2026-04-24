@@ -1,32 +1,24 @@
 import json
 class Data:
     def __init__(self):
-        self.data = {
+        self.categorys = {
         }
     def loadData(self, fileName):
         with open(fileName, "r") as file:
+            #json is treated as a dictonary
             self.data = json.load(file)
 
-            categories = list(self.data.items.keys())
-            for i, category in enumerate(categories):
-                print(f"{i+1}: {category}")
-            choice = input("pick a category: ")
-            selectedCategory = categories[int(choice)-1]
-            catagoryData = self.data[selectedCategory]
+            self.getCost(self.data) 
+    def getCost(self, category, current_category="unknown"):
+        for key, value in category.items():
+            if isinstance(value, dict):
+                self.getCost(value, key)
+            elif isinstance(value, (int, float)):
+                if current_category not in self.categorys:
+                    self.categorys[current_category] = {}
+                self.categorys[current_category][key] = value
+    
 
-            if not isinstance(list(catagoryData.values())[0], int):
-                subCatagories = list(catagoryData.keys())
-                for i, subCatagory in enumerate(subCatagories, 1):
-                    print(f"{i}: {subCatagory}")
-                subChoice = input("pick a sub category: ")
-                selectedSubCatagory = subCatagories[int(subChoice)-1]
-                finalItems = catagoryData[selectedSubCatagory]
-            else:
-                finalItems = catagoryData
 
-                self.categorys = {
-                    
-                }
-                def getCost(category):
-                    for item in category:
+
 

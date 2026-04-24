@@ -10,7 +10,6 @@ def greeting():
     choice = ""
     data = Data()
     data.loadData("Source/data.json")
-    print(data.data)
     playerRace = races.Race()
     playerClass = classes.Classes()
     className = playerClass.chooseClass()
