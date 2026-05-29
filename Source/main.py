@@ -16,7 +16,7 @@ def greeting():
     playerStats = stats2.choosingStats()
     playerGold = StartingGold.GoldRoll(playerClass, className)
     playerShop = shop.Shop(data.data["items"])
-    playerShop.openShop(playerGold)
+    playerShop.openShop(playerGold.gold)
     
 def main():
     greeting()
